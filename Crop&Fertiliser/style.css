@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Mate:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Raleway;
+  cursor: none;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.cursor {
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.62);
+    mix-blend-mode: difference;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.slideshow {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+    z-index: 1; 
+} 
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0; 
+    transition: opacity 2s ease-in-out;
+    z-index: 0; 
+} 
+
+.slide.active {
+    opacity: 0.34;
+}
+
+.page1, .page2 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 20px;
+}
+.page1 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding-top: 5vw;
+    position: relative; 
+    z-index: 1;  
+    color: rgb(0, 0, 0); 
+    padding: 20px;
+    /* background: rgb(251,222,63);
+    background: radial-gradient(circle, rgba(251,222,63,1) 0%, rgba(252,144,70,1) 100%); */
+}
+.h11{
+    margin-top: 20rem;
+    font-size:5.9vw;
+    font-weight: 700;
+    color: #000000;
+    margin-left: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 12rem;
+    text-shadow:10px 10px 10px rgb(255, 255, 255);
+    z-index: 1;
+} 
+.p11{
+    color: black;
+    text-align: left;
+    font-weight: 600;
+    margin-top: 4rem;
+    margin-left: 8rem;
+    font-size: larger;
+}
+.page2 {
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 100px;
+    position: relative;
+     z-index: 1; 
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.h12{
+    font-size:7.5vw;
+    font-weight: 700;
+    color: #ffffff;
+    margin-left: 498px;
+    text-shadow:10px 10px 10px rgba(1, 8, 0, 0.3);
+}
+
+.img2{
+    height: 500px;
+    width: 100%;
+}
+
+#bp-webchat-container {
+    position: fixed;
+    bottom: 20px; /* Adjust the position to suit your layout */
+    right: 20px;
+    z-index: 9999;  /*Make sure it's above the other content */
+    display: block; /* Ensure it's visible */
+    overflow: hidden;
+  }
+  

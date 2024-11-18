@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Mate:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Raleway;
+  color: #fff;
+  cursor: none;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body a {
+  text-decoration: none;
+  color: #111;
+}
+/* #purple {
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  position: fixed;
+  z-index: 100;
+  background-color: #edbfff;
+  opacity: 0;
+  display: none;
+  transition: opacity ease 1s;
+} */
+.cursor {
+  height: 30px;
+  width: 30px;
+  /* transform: translate(-50%, -50%); */
+  border-radius: 50%;
+  position: fixed;
+  background-color: #ffffff;
+  z-index: 8;
+  transition: background-image ease 0.5s;
+  background-position: center;
+  background-size: cover;
+  mix-blend-mode: difference;
+}
+.main {
+  /* background-color: #ae9463; */
+  background: rgb(20,36,0);
+  background: radial-gradient(circle, rgba(20,36,0,1) 0%, rgba(97,121,9,1) 53%, rgba(52,77,53,1) 100%, rgba(0,212,255,1) 100%);cursor: none;
+}
+
+.page1 {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 9;
+  padding-top: 12vw;
+  color: white;
+  font-family: Raleway;
+}
+
+.page1 h3 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: calc(8vw + 8rem);
+  font-weight: 800;
+  letter-spacing: -5px;
+}
+
+#nav {
+  height: 55px;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  position: fixed;
+  /* mix-blend-mode: difference; */
+  z-index: 1;
+  cursor: none;
+  color: black;
+}
+
+#nav h1 {
+  font-size: calc(0.8vw + 0.8rem);
+  font-weight: 700;
+  font-family: Raleway;
+  color: black;
+}
+
+#nav-part2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+#nav #circle {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background-color: black;
+}
+#nav h4 {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0;
+  color: black;
+}
+#nav h4:nth-child(1) {
+  border-bottom: 1.5px solid;
+}
+
+.dropdown-toggle {
+  background-color: transparent;
+  text-transform: uppercase;
+  border: none;
+  padding: 0;
+  color: black;
+}
+
+/* .dropdown a::hover {
+  background-color: #a2e0b0;
+} */
+
+.dropdown-toggle:nth-child(1) {
+  border-bottom: 1.5px solid;
+  border-radius: 0;
+}
+
+#main-text{
+  margin-top: -2rem;
+}
+.page1 h1 {
+  font-size: 8vw;
+  font-weight: 500;
+  font-family: Raleway;
+  margin-left: 6vw;
+  transform-origin: left;
+  padding-bottom: -300px;
+}
+.page1 h2 {
+  font-size: 8vw;
+  font-weight: 500;
+  transform-origin: left;
+  font-family: Raleway;
+  margin-left: 26vw;
+  padding-top: 110px;
+  display: block;
+}
+
+
+.page2 {
+  min-height: 80vh;
+  width: 100%;
+  padding: 100px 5vw;
+  border-bottom: 2px solid #6c6c6c;
+  position: relative;
+  z-index: 9;
+}
+
+.page2 h1 {
+  font-size: calc(2.6vw + 3.3rem);
+  font-weight: 700;
+  color: white;
+  font-family: Raleway;
+  padding-bottom: 50px;
+}
+.page2-container {
+  height: 60vh;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0 5vw; */
+}
+.page2-left {
+  /* background-color: blue; */
+  width: 40%;
+}
+.page2-right {
+  /* background-color: blue; */
+  width: 24%;
+}
+.page2-left h2 {
+  font-size: calc(1.8vw + 1.8rem);
+  font-weight: 300;
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 4vw;
+}
+.page2-right p {
+  font-size: 28px;
+  color: rgb(200, 200, 76);
+}
+.page2-right button {
+  width: 100%;
+  border-radius: 10rem;
+  border: none;
+  padding: 4px 0;
+  background-color: rgb(200, 200, 76);
+  color: #111;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  /* margin-left: -62rem; */
+}
+
+.page3 {
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 100px;
+  position: relative;
+  z-index: 9;
+}
+
+.page3 h1 {
+  font-size: 6.8vw;
+  font-weight: 700;
+  color: white;
+  margin-left: 100px;
+}
+.page3-part1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.page3-part1 img:nth-child(1) {
+  height: 400px;
+  margin-top: 160px;
+}
+.page3-part1 img:nth-child(2) {
+  height: 400px;
+  margin-top: 40px;
+}
+.page4 {
+  min-height: 100vh;
+  width: 100%;
+  z-index: 9;
+  position: relative;
+  padding: 170px 100px;
+  /* background-color: rgb(203, 158, 74); */
+  transition: background-color 1.3s ease;
+}
+.elem {
+  /* background-color: salmon; */
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.elem img {
+  width: 500px;
+  position: absolute;
+  opacity: 0;
+  transition: all ease-out 0.5s;
+  transform: translateY(10%) rotate(2deg);
+}
+.elem img:nth-child(1) {
+  left: 2%;
+}
+.elem img:nth-child(3) {
+  right: 5%;
+  height: 500px;
+  width: 350px;
+}
+.text-div {
+  height: 16vh;
+  position: relative;
+  z-index: 9;
+  overflow: hidden;
+}
+.elem h1 {
+  font-size: 7.5vw;
+  font-weight: 600;
+  transition: all ease-out 0.5s;
+  color: #111;
+}
+
+.elem:hover h1 {
+  transform: translateY(-100%);
+  color: whitesmoke;
+}
+.elem h3 {
+  font-size: 6.2vw;
+  font-weight: 600;
+  transition: all ease-out 0.5s;
+  color: #111;
+}
+
+.elem:hover h3 {
+  transform: translateY(-100%);
+  color: whitesmoke;
+}
+.elem:hover img {
+  opacity: 1;
+  transform: translateY(0%) rotate(0deg);
+}
+.pg4-h1{
+  font-size: 6.5vw;
+  text-align: center;
+  width: 100%;
+  size: 0cm;
+  font-size: small;
+  font-weight: 300;
+  font-size: 0%;
+}
+
+.page5 {
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 100px;
+  position: relative;
+  z-index: 9;
+}
+
+.page5 h1 {
+  font-size: 6.8vw;
+  font-weight: 700;
+  color: #111;
+  margin-left: 100px;
+}
+.page5-part1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.page5-part1 img:nth-child(1) {
+  height: 550px;
+  width:100%;
+  /* margin-top: 160px; */
+}
+/* .page5-part1 img:nth-child(2) {
+  height: 400px;
+  margin-top: 40px;
+} */
+
+
+.img111{
+  height: 340px;
+  width: 200px;
+}
